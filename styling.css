@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* Setting the root font size */
+  font-size: 10px;
+}
+
+main {
+  background: url("images/nathan-cabin-crop-1900.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  height: 5rem;
+  margin: 0 auto;
+  color: #55f924;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(247, 248, 248, 0.3);
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 2vw;
+  margin-left: 100px;
+}
+
+.ham {
+  display: none;
+}
+
+nav {
+  margin-right: 100px;
+}
+
+nav a {
+  color: #55f924;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 5rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.content {
+  width: 50%;
+  height: 236px;
+  margin: 25rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  text-align: center;
+  background-color: rgb(247, 248, 248, 0.3);
+  color: rgb(34, 32, 32);
+  border-radius: 0.5rem;
+}
+
+.book {
+  border: none;
+  width: 200px;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: #55f924;
+  color: rgb(34, 32, 32);
+  transition: 0.4s;
+}
+
+.book:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: rgb(34, 32, 32);
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+	color: #55f924;
+}
+
+address {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.social-icons,
+.dev {
+  margin-bottom: 1rem;
+}
+
+.social-icons img {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+p {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    background: url("images/nathan-cabin-600.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+  }
+
+  .logo {
+    text-transform: uppercase;
+    font-size: 5vw;
+    margin-left: 5vw;
+  }
+
+  .ham {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    top: 10px;
+    right: 5vw;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #55f924;
+    background-image: url("images/hamburger-menu.png");
+    background-size: 100%;
+  }
+
+  nav {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    padding: 5px 0;
+    background-color: rgb(34, 32, 32);
+    width: 100vw;
+    overflow: hidden;
+    color: white;
+    transform: translateY(-150%);
+    transition: transform 0.2s ease;
+  }
+
+  nav a {
+    display: block;
+    padding: 5px;
+  }
+
+  .content {
+    width: 75%;
+    height: 300px;
+    margin: 25rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgb(247, 248, 248, 0.3);
+    color: rgb(34, 32, 32);
+    border-radius: 0.5rem;
+  }
+}
+
+.showNav {
+  transform: translateY(0);
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  main {
+    background: url("images/nathan-cabin-crop-1200.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+  }
+
+  .logo {
+    text-transform: uppercase;
+    font-size: 3vw;
+    margin-left: 5vw;
+  }
+
+  nav {
+    margin-right: 5vw;
+  }
+
+  nav a {
+    font-size: 1.7rem;
+  }
+
+  .content {
+    width: 65%;
+    height: 236px;
+    margin: 25rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.1rem;
+    text-align: center;
+    background-color: rgb(247, 248, 248, 0.3);
+    color: rgb(34, 32, 32);
+    border-radius: 0.5rem;
+  }
+}
